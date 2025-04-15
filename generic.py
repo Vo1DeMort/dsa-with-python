@@ -1,5 +1,5 @@
 
-from typing import TypeVar, Generic
+from typing import TypeVar, Generic,Optional
 
 # NOTE: declare a generic type
 T = TypeVar('T') 
@@ -20,7 +20,6 @@ class Box(Generic[T]):
 
 
 
-from typing import Optional
 
  
 # NOTE: optional means it may or may not return something 
