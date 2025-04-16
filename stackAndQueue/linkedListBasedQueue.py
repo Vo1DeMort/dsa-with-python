@@ -1,4 +1,4 @@
-# NOTE: can be done with both singly and doubly
+# NOTE: can be done with both singly and doubly linked list
 
 ''' with doubly linked list '''
 

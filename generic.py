@@ -1,10 +1,12 @@
 
-from typing import TypeVar, Generic,Optional
+from typing import TypeVar, Generic, Optional
 
 # NOTE: declare a generic type
-T = TypeVar('T') 
+T = TypeVar('T')
 
-#NOTE: 'Generic' tells this is a generic class which works with type 'T'
+# NOTE: 'Generic' tells this is a generic class which works with type 'T'
+
+
 class Box(Generic[T]):
     def __init__(self, item: T) -> None:
         self._item = item
@@ -19,13 +21,9 @@ class Box(Generic[T]):
         return f"Box({self._item!r})"
 
 
-
-
- 
-# NOTE: optional means it may or may not return something 
+# NOTE: optional means it may or may not return something
 def find_item(index: int) -> Optional[str]:
     items = ["apple", "banana", "cherry"]
     if 0 <= index < len(items):
         return items[index]  # Returns a string, e.g., "apple"
     return None  # No item found, so return None
-

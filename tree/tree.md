@@ -20,3 +20,5 @@
 - total number of node from parent to leaf node
 # depth
 - number of edge from parent to current node
+
+# level, height, and depth (similar concept)
